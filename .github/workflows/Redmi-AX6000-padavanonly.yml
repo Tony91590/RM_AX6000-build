@@ -29,8 +29,8 @@ env:
   DIY_P1_SH: padavanonly/Redmi-AX6000/diy-part1.sh
   DIY_P2_SH: padavanonly/Redmi-AX6000/diy-part2.sh
 #  SSH_ACTIONS: false
-  UPLOAD_BIN_DIR: ture
-  UPLOAD_FIRMWARE: false
+  UPLOAD_BIN_DIR: true
+  UPLOAD_FIRMWARE: true
   UPLOAD_RELEASE: true
   TZ: Asia/Shanghai
   ###############改名字##############
