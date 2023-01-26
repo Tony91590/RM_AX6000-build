@@ -28,8 +28,9 @@ env:
   CONFIG_FILE: padavanonly/Redmi-AX6000/.config
   DIY_P1_SH: padavanonly/Redmi-AX6000/diy-part1.sh
   DIY_P2_SH: padavanonly/Redmi-AX6000/diy-part2.sh
-  SSH_ACTIONS: false
-  UPLOAD_FIRMWARE: true
+#  SSH_ACTIONS: false
+  UPLOAD_BIN_DIR: ture
+  UPLOAD_FIRMWARE: false
   UPLOAD_RELEASE: true
   TZ: Asia/Shanghai
   ###############改名字##############
@@ -115,6 +116,13 @@ jobs:
     - name: 查看磁盘使用情况
       if: (!cancelled())
       run: df -hT
+
+    - name: Upload bin directory
+      uses: actions/upload-artifact@main
+      if: steps.compile.outputs.status == 'success' && env.UPLOAD_BIN_DIR == 'true'
+      with:
+        name: OpenWrt_bin${{ env.DEVICE_NAME }}${{ env.FILE_DATE }}
+        path: openwrt/bin
 
     - name: 整理文件并重命名
       id: organize
