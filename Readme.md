@@ -2,6 +2,8 @@
 
 https://blog.hhao.cc/archives/ax6000-uboot
 
+http://82831.cmd8.com/post/139.html
+
 OpenWrt官方有过三种分区固件：OpenWrt stock layout、OpenWrt layout和OpenWrt U-Boot layout。
 
 OpenWrt stock layout对应保留官方分区刷OpenWrt，我称为stock固件。
