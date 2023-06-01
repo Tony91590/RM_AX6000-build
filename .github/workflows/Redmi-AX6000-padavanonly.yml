@@ -24,7 +24,7 @@ on:
 
 env:
   REPO_URL: https://github.com/Tony91590/immortalwrt
-  REPO_BRANCH: Build-AX6000
+  REPO_BRANCH: lgs2007m
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: padavanonly/Redmi-AX6000/.config
   DIY_P1_SH: padavanonly/Redmi-AX6000/diy-part1.sh
