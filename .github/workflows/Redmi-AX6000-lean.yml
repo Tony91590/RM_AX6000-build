@@ -34,7 +34,7 @@ env:
   UPLOAD_RELEASE: true
   TZ: Asia/Shanghai
   ###############Name##############
-  OPENWRT_NAME: hanwckf
+  OPENWRT_NAME: lean
 
 jobs:
   build:
