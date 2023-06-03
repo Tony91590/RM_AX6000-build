@@ -13,4 +13,4 @@
 # Modify default IP
 sed -i 's/192.168.1.1/192.168.31.1/g' package/base-files/files/bin/config_generate
 sed -i 's/zh_cn/auto/g' feeds/luci/modules/luci-base/root/etc/uci-defaults/luci-base
-
+sed -i 's/hw_wed '0'/hw_wed '1'/g' feeds/luci/applications/luci-app-turboacc/root/etc/config/turboacc
