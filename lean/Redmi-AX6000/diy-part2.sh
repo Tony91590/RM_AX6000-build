@@ -32,7 +32,7 @@ cp $GITHUB_WORKSPACE/lean/Redmi-AX6000/data/etc/banner package/base-files/files/
 #======================
 mkdir -p package/base-files/files/etc/init.d/
 cp $GITHUB_WORKSPACE/lean/Redmi-AX6000/data/etc/mtd-rw package/base-files/files/etc/init.d/
-chmod 0755 package/base-files/files/etc/init.d/mtd-rw
+#
 #======================
 rm -rf package/lean/default-settings/files/zzz-default-settings
 cp $GITHUB_WORKSPACE/lean/Redmi-AX6000/data/default-settings/zzz-default-settings package/lean/default-settings/files/
