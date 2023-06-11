@@ -10,7 +10,7 @@
 # Description: OpenWrt DIY script part 2 (After Update feeds)
 #
 
-# Custom for REDMI AX6000 rmdir[ctrl_interface=/var/run/hostapd]: Permission denied
+# Custom for REDMI AX6000
 #sed -i 's/192.168.1.1/192.168.31.1/g' package/base-files/files/bin/config_generate
 #======================
 sed -i 's/zh_cn/auto/g' feeds/luci/modules/luci-base/root/etc/uci-defaults/luci-base
