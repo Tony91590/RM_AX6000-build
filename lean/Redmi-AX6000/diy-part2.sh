@@ -28,10 +28,10 @@ rm -rf feeds/luci/applications/luci-app-turboacc/root/etc/init.d/turboacc
 cp $GITHUB_WORKSPACE/lean/Redmi-AX6000/data/turboacc feeds/luci/applications/luci-app-turboacc/root/etc/init.d/
 #======================
 rm -rf package/base-files/files/etc/banner
-cp $GITHUB_WORKSPACE/data/etc/banner package/base-files/files/etc/
+cp $GITHUB_WORKSPACE/lean/Redmi-AX6000/data/etc/banner package/base-files/files/etc/
 #======================
 mkdir -p package/base-files/files/etc/init.d/
-cp $GITHUB_WORKSPACE/data/etc/mtd-rw package/base-files/files/etc/init.d/
+cp $GITHUB_WORKSPACE/lean/Redmi-AX6000/data/etc/mtd-rw package/base-files/files/etc/init.d/
 chmod 0755 package/base-files/files/etc/init.d/mtd-rw
 #======================
 rm -rf package/lean/default-settings/files/zzz-default-settings
