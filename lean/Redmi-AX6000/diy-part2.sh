@@ -19,3 +19,5 @@ rm -rf package/kernel/mac80211/files/lib/netifd/wireless/mac80211.sh
 cp $GITHUB_WORKSPACE/lean/Redmi-AX6000/data/lib/netifd/wireless/mac80211.sh package/kernel/mac80211/files/lib/netifd/wireless/
 rm -rf package/kernel/mac80211/files/lib/wifi/mac80211.sh
 cp $GITHUB_WORKSPACE/lean/Redmi-AX6000/data/lib/wifi/mac80211.sh package/kernel/mac80211/files/lib/wifi/
+rm -rf feeds/luci/applications/luci-app-turboacc/root/etc/init.d/turboacc
+cp $GITHUB_WORKSPACE/lean/Redmi-AX6000/data/turboacc feeds/luci/applications/luci-app-turboacc/root/etc/init.d/
