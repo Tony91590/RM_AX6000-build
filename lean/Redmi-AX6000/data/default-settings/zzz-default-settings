@@ -6,6 +6,7 @@ uci commit fstab
 uci set upnpd.config.enabled=1
 uci commit upnpd
 
+chmod +x /etc/init.d/mtd-rw
 /etc/init.d/mtd-rw start
 
 rm -f /usr/lib/lua/luci/view/admin_status/index/mwan.htm
