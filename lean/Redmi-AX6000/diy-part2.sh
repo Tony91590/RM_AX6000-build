@@ -29,3 +29,7 @@ cp $GITHUB_WORKSPACE/lean/Redmi-AX6000/data/turboacc feeds/luci/applications/luc
 #======================
 rm -rf package/base-files/files/etc/banner
 cp $GITHUB_WORKSPACE/data/etc/banner package/base-files/files/etc/
+#======================
+mkdir -p package/base-files/files/etc/init.d/
+cp $GITHUB_WORKSPACE/data/etc/mtd-rw package/base-files/files/etc/init.d/
+chmod 0755 package/base-files/files/etc/init.d/mtd-rw
