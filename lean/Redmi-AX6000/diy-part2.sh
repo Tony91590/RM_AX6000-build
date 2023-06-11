@@ -42,3 +42,6 @@ cp $GITHUB_WORKSPACE/lean/Redmi-AX6000/data/default-settings/Makefile package/le
 #======================
 rm -rf package/base-files/files/bin/config_generate
 cp $GITHUB_WORKSPACE/lean/Redmi-AX6000/data/bin/config_generate package/base-files/files/bin/
+#======================
+rm -rf package/lean/autocore/files/arm/index.htm
+cp $GITHUB_WORKSPACE/lean/Redmi-AX6000/data/autocore/index.htm package/lean/autocore/files/arm/
