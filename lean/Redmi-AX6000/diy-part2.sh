@@ -11,7 +11,7 @@
 #
 
 # Custom for REDMI AX6000 rmdir[ctrl_interface=/var/run/hostapd]: Permission denied
-sed -i 's/192.168.1.1/192.168.31.1/g' package/base-files/files/bin/config_generate
+#sed -i 's/192.168.1.1/192.168.31.1/g' package/base-files/files/bin/config_generate
 #======================
 sed -i 's/zh_cn/auto/g' feeds/luci/modules/luci-base/root/etc/uci-defaults/luci-base
 #======================
@@ -39,4 +39,6 @@ cp $GITHUB_WORKSPACE/lean/Redmi-AX6000/data/default-settings/zzz-default-setting
 #======================
 rm -rf package/lean/default-settings/Makefile
 cp $GITHUB_WORKSPACE/lean/Redmi-AX6000/data/default-settings/Makefile package/lean/default-settings/
-
+#======================
+rm -rf package/base-files/files/bin/config_generate
+cp $GITHUB_WORKSPACE/lean/Redmi-AX6000/data/bin/config_generate package/base-files/files/bin/
