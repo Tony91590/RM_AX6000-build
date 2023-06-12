@@ -18,8 +18,8 @@ sed -i 's/zh_cn/auto/g' feeds/luci/modules/luci-base/root/etc/uci-defaults/luci-
 rm -rf feeds/packages/net/ddns-scripts/files/ddns.config
 cp $GITHUB_WORKSPACE/lean/Redmi-AX6000/data/ddns.config feeds/packages/net/ddns-scripts/files/
 #======================
-rm -rf package/kernel/mac80211/files/lib/netifd/wireless/mac80211.sh
-cp $GITHUB_WORKSPACE/lean/Redmi-AX6000/data/lib/netifd/wireless/mac80211.sh package/kernel/mac80211/files/lib/netifd/wireless/
+#rm -rf package/kernel/mac80211/files/lib/netifd/wireless/mac80211.sh
+#cp $GITHUB_WORKSPACE/lean/Redmi-AX6000/data/lib/netifd/wireless/mac80211.sh package/kernel/mac80211/files/lib/netifd/wireless/
 #======================
 rm -rf package/kernel/mac80211/files/lib/wifi/mac80211.sh
 cp $GITHUB_WORKSPACE/lean/Redmi-AX6000/data/lib/wifi/mac80211.sh package/kernel/mac80211/files/lib/wifi/
@@ -32,7 +32,6 @@ cp $GITHUB_WORKSPACE/lean/Redmi-AX6000/data/etc/banner package/base-files/files/
 #======================
 mkdir -p package/base-files/files/etc/init.d/
 cp $GITHUB_WORKSPACE/lean/Redmi-AX6000/data/etc/mtd-rw package/base-files/files/etc/init.d/
-#
 #======================
 rm -rf package/lean/default-settings/files/zzz-default-settings
 cp $GITHUB_WORKSPACE/lean/Redmi-AX6000/data/default-settings/zzz-default-settings package/lean/default-settings/files/
